@@ -63,11 +63,10 @@ kramdown:
 gitalk:
   enable: true    #是否开启Gitalk评论
   clientID: 190135a2f3510cc0a7ed                            #生成的clientID
-  clientSecret: 0998e8760524b9915e1466ca2fd79643510b2022    #生成的clientSecret
+  clientSecret: ca6d6139d1e1b8c43f8b2e19492ddcac8b322d0d    #生成的clientSecret
   repo: skylinelin.github.io    #仓库名称
   owner: skylinelin    #github用户名
   admin: skylinelin
-	id: 'window.location.pathname'
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
@@ -79,7 +78,7 @@ ba_track_id: b50bf2b12b5338a1845e33832976fd68
 
 # Google Analytics
 ga_track_id: 'UA-90855596-1'            # Format: UA-xxxxxx-xx
-ga_domain: qiubaiying.top               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
+ga_domain: auto              # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
 
 
 
