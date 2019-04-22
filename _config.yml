@@ -63,7 +63,7 @@ kramdown:
 gitalk:
   enable: true    #是否开启Gitalk评论
   clientID: 190135a2f3510cc0a7ed                            #生成的clientID
-  clientSecret: ca6d6139d1e1b8c43f8b2e19492ddcac8b322d0d    #生成的clientSecret
+  clientSecret: 0998e8760524b9915e1466ca2fd79643510b2022    #生成的clientSecret
   repo: skylinelin.github.io    #仓库名称
   owner: skylinelin    #github用户名
   admin: skylinelin
