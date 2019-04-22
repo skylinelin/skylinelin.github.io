@@ -21,7 +21,7 @@ tags:
 
 配置多个实例共同构成一个集群对外提供服务以达到水平扩展的目的，每个服务器上的数据是相同的，每一个服务器均可以对外提供读和写的服务，这点和redis是相同的，即对客户端来讲每个服务器都是平等的。
 
-![zookeeper01](/resource_img/zookeeper01.png)
+![zookeeper01](/resource_img/zookeeper/zookeeper01.png)
 
 ### 1.2 Zookeeper特性
 1. **最终一致性：** client不论连接到哪个Server，展示给它都是同一个视图，这是zookeeper最重要的性能。 
@@ -48,9 +48,9 @@ zookeeper提供了三种方式：
  - 客户端（client），请求发起方;
  
 
-![zookeeper02](/resource_img/zookeeper02.png)
+![zookeeper02](/resource_img/zookeeper/zookeeper02.png)
 
-![zookeeper03](/resource_img/zookeeper03.png)
+![zookeeper03](/resource_img/zookeeper/zookeeper03.png)
 
 ### 2.3 Zookeeper server属性
 

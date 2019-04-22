@@ -24,7 +24,7 @@ Zookeeper选举主要是针对leader而言。下述主要分析leader的选择�
  - 全新集群选举
  - 非全新集群选举。
 
-![zookeeper04](/resource_img/zookeeper04.png)
+![zookeeper04](/resource_img/zookeeper/zookeeper04.png)
 
 ### 1.2 全新集群选举：
 
@@ -92,7 +92,7 @@ Zookeeper选举主要是针对leader而言。下述主要分析leader的选择�
 4. 完成同步后通知follower 已经成为uptodate状态；
 5. Follower收到uptodate消息后，又可以重新接受client的请求进行服务了。
 
-![zo5](/resource_img/zookeeper05.png)
+![zo5](/resource_img/zookeeper/zookeeper05.png)
 
 
 ## 3. Zookeeper工作流程-Leader
@@ -102,7 +102,7 @@ Zookeeper选举主要是针对leader而言。下述主要分析leader的选择�
 3. 根据不同的消息类型，进行不同的处理。Learner的消息类型主要有PING消息、REQUEST消息、ACK消息、REVALIDATE消息：
 PING 消息是指Learner的心跳信息；REQUEST消息是Follower发送的提议信息，包括写请求及同步请求；ACK消息是 Follower对提议的回复，超过半数的Follower通过，则commit该提议；REVALIDATE消息是用来延长SESSION有效时间。
 
-![zo6](/resource_img/zookeeper06.png)
+![zo6](/resource_img/zookeeper/zookeeper06.png)
 
 ## 4. Zookeeper工作流程-Follower
 
@@ -120,7 +120,7 @@ PING 消息是指Learner的心跳信息；REQUEST消息是Follower发送的提�
 5. REVALIDATE消息：根据Leader的REVALIDATE结果，关闭待revalidate的session还是允许其接受消息； 
 6. SYNC消息：返回SYNC结果到客户端，这个消息最初由客户端发起，用来强制得到最新的更新。
 
-![zo7](/resource_img/zookeeper07.png)
+![zo7](/resource_img/zookeeper/zookeeper07.png)
 
 ## 5. Zookeeper节点数据操作流程
 1. 在Client向Follwer发出一个写的请求
@@ -130,7 +130,7 @@ PING 消息是指Learner的心跳信息；REQUEST消息是Follower发送的提�
 5. Leader将结果汇总后如果需要写入，则开始写入同时把写入操作通知给Leader，然后commit;
 6. Follwer把请求结果返回给Client
 
-![zo8](/resource_img/zookeeper08.png)
+![zo8](/resource_img/zookeeper/zookeeper08.png)
 
 
 > 结尾
