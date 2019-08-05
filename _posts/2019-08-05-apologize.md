@@ -4,7 +4,7 @@ title:      apologize
 subtitle:   ergou、fool、Spanking man、to get someone annoyed 
 date:       2019-08-05
 author:     skylinelin
-header-img: img/machine.jpg
+header-img: img/yt.jpg
 catalog: true
 tags:
     - taiqiren
@@ -45,3 +45,6 @@ I think I will be abandoned soon.I am more afraid than before.Er bao help me.
 
 ![2](/resource_img/yt/l.png)
 
+
+
+> 😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭
