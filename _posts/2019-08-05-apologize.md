@@ -41,7 +41,7 @@ I think I will be abandoned soon.I am more afraid than before.Er bao help me.
 
 
 
-![1](resource_img/yt/wc.png)
+![1](/resource_img/yt/wc.png)
 
 😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭
 
