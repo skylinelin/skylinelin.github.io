@@ -2,7 +2,7 @@
 layout:     post
 title:      apologize
 subtitle:   ergou、fool、Spanking man、to get someone annoyed 
-date:       2018-06-05
+date:       2019-08-05
 author:     skylinelin
 header-img: img/machine.jpg
 catalog: true
