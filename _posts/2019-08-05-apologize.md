@@ -7,10 +7,10 @@ author:     skylinelin
 header-img: img/machine.jpg
 catalog: true
 tags:
-    - Redis集群搭建
-    - Redis
-    - Redis持久化
-    - 持久化差异
+    - taiqiren
+    - huogai
+    - geipipidedaoqian
+    - A man who was immediately abandoned
 ---
 
 > 有必要了解一个非关系型数据库Redis
