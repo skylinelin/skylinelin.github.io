@@ -17,45 +17,17 @@ tags:
 
 ## 1、Cause of anger
 
-Today, the weather was very cool at noon. The two treasures were on the way back from the express delivery. At this time, the two treasures chatted with the two dogs. On the way, the two treasures talked to the two dogs many times, but the two dogs did not reply, and the two treasures asked why the two dogs did not Li Erbao, the two dogs said that Taobao did not ignore the two treasures. At this time, the two dogs did not find their fault, but instead made an excuse to cover up the daze, and the two treasures were furious~
+Today, the weather was very cool at noon. The two treasures were on the way back from the express delivery. At this time, the two treasures chatted with the two dogs. On the way, the two treasures talked to the two dogs many times, but the two dogs did not reply, and the two treasures asked why the two dogs did not council Erbao, the two dogs said that Taobao did not ignore the two treasures. At this time, the two dogs did not find their fault, but instead made an excuse to cover up the daze, and the two treasures were furious~
+
+Erbao said, fuck your mother, the two dogs are very uncomfortable, obviously it is wrong, I don't know what to say, then the two treasures are super angry, smashed the two dogs for a while, the two dogs even dare not speak.
 
 
 
-## 2、两种持久化对比
+## 2、Become serious
 
-**RDB存在哪些优势呢？**
+God! Erbao has become extremely angry at this time, the two dogs are shameless, and they continue to make six calls to Erbao. The two dogs make a phone call, the two treasures become more angry, and the two dogs make six calls. Treasure is six times angry.
 
-1). 一旦采用该方式，那么你的整个Redis数据库将只包含一个文件，这对于文件备份而言是非常完美的。比如，你可能打算每个小时归档一次最近24小时的数据，同时还要每天归档一次最近30天的数据。通过这样的备份策略，一旦系统出现灾难性故障，我们可以非常容易的进行恢复。
-
-2). 对于灾难恢复而言，RDB是非常不错的选择。因为我们可以非常轻松的将一个单独的文件压缩后再转移到其它存储介质上。
-
-3). 性能最大化。对于Redis的服务进程而言，在开始持久化时，它唯一需要做的只是fork出子进程，之后再由子进程完成这些持久化的工作，这样就可以极大的避免服务进程执行IO操作了。
-
-4). 相比于AOF机制，如果数据集很大，RDB的启动效率会更高。
-
-**RDB又存在哪些劣势呢？**
-
-1). 如果你想保证数据的高可用性，即最大限度的避免数据丢失，那么RDB将不是一个很好的选择。因为系统一旦在定时持久化之前出现宕机现象，此前没有来得及写入磁盘的数据都将丢失。
-
-2). 由于RDB是通过fork子进程来协助完成数据持久化工作的，因此，如果当数据集较大时，可能会导致整个服务器停止服务几百毫秒，甚至是1秒钟。
-
-**AOF的优势有哪些呢？**
-
-1). 该机制可以带来更高的数据安全性，即数据持久性。Redis中提供了3中同步策略，即每秒同步、每修改同步和不同步。事实上，每秒同步也是异步完成的，其效率也是非常高的，所差的是一旦系统出现宕机现象，那么这一秒钟之内修改的数据将会丢失。而每修改同步，我们可以将其视为同步持久化，即每次发生的数据变化都会被立即记录到磁盘中。可以预见，这种方式在效率上是最低的。至于无同步，无需多言，我想大家都能正确的理解它。
-
-2). 由于该机制对日志文件的写入操作采用的是append模式，因此在写入过程中即使出现宕机现象，也不会破坏日志文件中已经存在的内容。然而如果我们本次操作只是写入了一半数据就出现了系统崩溃问题，不用担心，在Redis下一次启动之前，我们可以通过redis-check-aof工具来帮助我们解决数据一致性的问题。
-
-3). 如果日志过大，Redis可以自动启用rewrite机制。即Redis以append模式不断的将修改数据写入到老的磁盘文件中，同时Redis还会创建一个新的文件用于记录此期间有哪些修改命令被执行。因此在进行rewrite切换时可以更好的保证数据安全性。
-
-4). AOF包含一个格式清晰、易于理解的日志文件用于记录所有的修改操作。事实上，我们也可以通过该文件完成数据的重建。
-
-**AOF的劣势有哪些呢？**
-
-1). 对于相同数量的数据集而言，AOF文件通常要大于RDB文件。RDB 在恢复大数据集时的速度比 AOF 的恢复速度要快。
-
-2). 根据同步策略的不同，AOF在运行效率上往往会慢于RDB。总之，每秒同步策略的效率是比较高的，同步禁用策略的效率和RDB一样高效。
-
-二者选择的标准，就是看系统是愿意牺牲一些性能，换取更高的缓存一致性（aof），还是愿意写操作频繁的时候，不启用备份来换取更高的性能，待手动运行save的时候，再做备份（rdb）。rdb这个就更有些 eventually consistent的意思了。
+This time, I have repeatedly made Erbao angry. These two treasures are not angry. The two treasures have been holding back. Today, I provoked two treasures. The treasure chest of Erbao was blown up, two treasures were dissatisfied, and the anger was uncontrollable.
 
 ## 4、两种持久化的配置
 
