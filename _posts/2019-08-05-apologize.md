@@ -13,15 +13,11 @@ tags:
     - A man who was immediately abandoned
 ---
 
-> 有必要了解一个非关系型数据库Redis
+> Why should you apologize in English? The reason is to let the baby look at the letter of apology, by the way, learn English, but also for the purpose of postgraduate consideration.
 
-## 1、Redis持久化
+## 1、Cause of anger
 
-Redis的所有数据都是保存在内存中，然后不定期的通过异步方式保存到磁盘上(这称为“半持久化模式”)；也可以把每一次数据变化都写入到一个append only file(aof)里面(这称为“全持久化模式”)。 
-
-RDB持久化（记录数据）
-
-AOF持久化（记录操作）
+Today, the weather was very cool at noon. The two treasures were on the way back from the express delivery. At this time, the two treasures chatted with the two dogs. On the way, the two treasures talked to the two dogs many times, but the two dogs did not reply, and the two treasures asked why the two dogs did not Li Erbao, the two dogs said that Taobao did not ignore the two treasures. At this time, the two dogs did not find their fault, but instead made an excuse to cover up the daze, and the two treasures were furious~
 
 
 
