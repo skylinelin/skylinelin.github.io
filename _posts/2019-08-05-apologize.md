@@ -39,6 +39,10 @@ Er bao scared me today.Start do not know Why are small things going to be angry?
 
 I think I will be abandoned soon.I am more afraid than before.Er bao help me.
 
+
+
+![1](resource_img/yt/wc.png)
+
 😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭
 
 ​               😭                                       😭
@@ -103,4 +107,4 @@ I think I will be abandoned soon.I am more afraid than before.Er bao help me.
 
 ​                                                            😭
 
-😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭
+😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭
