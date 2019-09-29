@@ -23,4 +23,6 @@ tags:
 
 
 
+![dy](/resource_img/gugong/dy.png)
+
 > 结尾
