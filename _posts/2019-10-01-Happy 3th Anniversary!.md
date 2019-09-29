@@ -27,6 +27,6 @@ tags:
 
 
 
-![me](/resource_img/gugong/me.jpg)
+![me](/resource_img/gugong/me.png)
 
 > 结尾
