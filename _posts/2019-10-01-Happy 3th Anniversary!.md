@@ -17,6 +17,8 @@ tags:
 
 ![panghu](/resource_img/gugong/panghu1.jpg)
 
+![ch](/resource_img/gugong/changhe.jpg)
+
 
 
 ## Linux的文件系统目录配置
