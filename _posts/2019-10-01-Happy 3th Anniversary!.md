@@ -2,7 +2,7 @@
 layout:     post
 title:      Happy 3th Anniversary!
 subtitle:   When I was dreaming about you baby, you were dreaming of me.
-date:       2017-10-01
+date:       2019-10-01
 author:     skylinelin
 header-img: resource_img/gugong/sanzhounian.jpg
 catalog: true
