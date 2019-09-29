@@ -13,7 +13,7 @@ tags:
 
 > Do you know? You know I love you so.
 
-![panghu](resource_img/gugong/panghu1.jpg)
+![panghu](/resource_img/gugong/panghu1.jpg)
 
 ## Linux的文件系统目录配置
 
