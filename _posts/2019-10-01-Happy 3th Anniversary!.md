@@ -13,6 +13,8 @@ tags:
 
 > Do you know? You know I love you so.
 
+![panghu](resource_img/gugong/panghu1.jpg)
+
 ## Linux的文件系统目录配置
 
 **/home**  每个账号在该目录下都有一个文件夹，进行数据的管理
