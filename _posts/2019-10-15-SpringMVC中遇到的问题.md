@@ -35,7 +35,32 @@ tags:
 	}
 ```
 
+## 2、POST、PUT、DELETE请求出现中文乱码
 
+**解决：**
 
+配置字符编码过滤器
 
+```xml
+<!-- 配置字符编码过滤器 -->
+	<filter>
+		<filter-name>CharacterEncodingFilter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+		<init-param>
+			<param-name>forceEncoding</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>CharacterEncodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+```
+
+> 注意：	如果中文有乱码，需要配置字符编码过滤器，且配置其他过滤器之前，否则不起作用。
 
