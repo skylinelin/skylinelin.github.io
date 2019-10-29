@@ -52,6 +52,8 @@ public class Dog {
 }
 ```
 
+### yml文件
+
 **application.yml**
 
 ```yaml
@@ -70,7 +72,7 @@ person:
     age: 2
 ```
 
-**导入依赖**
+### 导入依赖
 
 ```xml
 <dependency>
@@ -82,5 +84,9 @@ person:
 
 
 
-> **注意：** 使用@ConfigurationProperties的时候要保证该类可以被扫描（例如：加上@Component注解或者其它注解）。
+> **注意：** 
+>
+> - 使用@ConfigurationProperties的时候要保证该类可以被扫描（例如：加上@Component注解或者其它注解）；
+> - 依赖的导入；
+> - yml文件格式的正确
 
