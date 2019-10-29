@@ -4,7 +4,7 @@ title:      SpringBoot trouble
 subtitle:   一些一些小坎坷
 date:       2019-10-29
 author:     skylinelin
-header-img: resource_img/spring/head.jpg
+header-img: resource_img/spring/SpringBoot/head.jpg
 catalog: true
 tags:
     - spring
