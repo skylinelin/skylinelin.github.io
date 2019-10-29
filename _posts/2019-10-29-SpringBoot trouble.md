@@ -82,5 +82,5 @@ person:
 
 
 
-> 注意：**使用@ConfigurationProperties的时候要保证该类可以被扫描（例如：加上@Component注解或者其它注解）。
+> **注意：** 使用@ConfigurationProperties的时候要保证该类可以被扫描（例如：加上@Component注解或者其它注解）。
 
