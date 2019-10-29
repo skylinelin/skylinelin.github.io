@@ -17,7 +17,7 @@ tags:
 
 ---
 
-## 问题一：使用@ConfigurationProperties(prefix = " ")注解将yaml注入bean问题
+## 问题一：使用@ConfigurationProperties注解将yaml注入bean问题
 
 ### 两个实体类
 
