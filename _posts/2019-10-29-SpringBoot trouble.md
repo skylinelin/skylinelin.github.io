@@ -88,5 +88,5 @@ person:
 >
 > - 使用@ConfigurationProperties的时候要保证该类可以被扫描（例如：加上@Component注解或者其它注解）；
 > - 依赖的导入；
-> - yml文件格式的正确
+> - yml文件格式的正确。
 
