@@ -19,7 +19,7 @@ tags:
 
 ## 问题一：使用@ConfigurationProperties注解将yaml、properties注入bean问题
 
-### 两个实体类
+#### 两个实体类
 
 **Person.java**
 
@@ -52,7 +52,7 @@ public class Dog {
 }
 ```
 
-### yml文件
+#### yml文件
 
 **application.yml**
 
@@ -72,7 +72,7 @@ person:
     age: 2
 ```
 
-### 导入依赖
+#### 导入依赖
 
 ```xml
 <dependency>
