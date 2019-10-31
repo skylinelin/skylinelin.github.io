@@ -220,8 +220,8 @@ spring:
 **springboot 启动会扫描以下位置的application.properties或者application.yml文件作为Spring boot的默认配置文件。**
 
 - –file:./config/
-
 - –file:./
+
 - –classpath:/config/
 - –classpath:/
 
