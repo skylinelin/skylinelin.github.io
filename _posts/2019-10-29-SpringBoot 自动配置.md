@@ -198,7 +198,9 @@ tags:
 
 7. 这样的话每一个自动配置类进行自动配置功能；
 
-   
+---
+
+
 
 ##  案例贯穿
 
@@ -316,6 +318,8 @@ public class HttpProperties {
 
 ```
 
+---
+
 
 
 ## SpringBoot 精髓
@@ -334,6 +338,86 @@ xxxxAutoConfigurartion：自动配置类；
 给容器中添加组件
 
 xxxxProperties:封装配置文件中相关属性；
+
+---
+
+
+
+## 其它
+
+### @Conditional 派生注解（Spring注解版原生的@Conditional作用）
+
+我们在看源码的时候看到很多判断注解 `@Conditionalxxx` ，作用就是必须是@Conditional指定的条件成立，才给容器中添加组件，配置配里面的所有内容才生效；@Conditional 是Spring的原生注解，在SpringBoot中派生了很多类似注解。
+
+
+
+| @Conditional扩展注解            | 作用（判断是否满足当前指定条件）                 |
+| ------------------------------- | ------------------------------------------------ |
+| @ConditionalOnJava              | 系统的java版本是否符合要求                       |
+| @ConditionalOnBean              | 容器中存在指定Bean；                             |
+| @ConditionalOnMissingBean       | 容器中不存在指定Bean；                           |
+| @ConditionalOnExpression        | 满足SpEL表达式指定                               |
+| @ConditionalOnClass             | 系统中有指定的类                                 |
+| @ConditionalOnMissingClass      | 系统中没有指定的类                               |
+| @ConditionalOnSingleCandidate   | 容器中只有一个指定的Bean，或者这个Bean是首选Bean |
+| @ConditionalOnProperty          | 系统中指定的属性是否有指定的值                   |
+| @ConditionalOnResource          | 类路径下是否存在指定资源文件                     |
+| @ConditionalOnWebApplication    | 当前是web环境                                    |
+| @ConditionalOnNotWebApplication | 当前不是web环境                                  |
+| @ConditionalOnJndi              | JNDI存在指定项                                   |
+
+**自动配置类必须在一定的条件下才能生效；**
+
+
+
+### 如何知道自动配置是否生效
+
+**我们可以通过启用  debug=true属性；来让控制台打印自动配置报告**，这样我们就可以很方便的知道哪些自动配置类生效；
+
+```properties
+# application.properties文件
+
+# 开启SpringBoot的Debug模式
+debug=true
+```
+
+然后我们运行
+
+```java
+============================
+CONDITIONS EVALUATION REPORT
+============================
+
+
+Positive matches:（启用了自动配置的）
+-----------------
+
+   DispatcherServletAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.web.servlet.DispatcherServlet' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+
+   DispatcherServletAutoConfiguration.DispatcherServletConfiguration matched:
+      - @ConditionalOnClass found required class 'javax.servlet.ServletRegistration' (OnClassCondition)
+      - Default DispatcherServlet did not find dispatcher servlet beans (DispatcherServletAutoConfiguration.DefaultDispatcherServletCondition)
+          
+
+Negative matches:（没有启动，没有匹配成功的自动配置类）
+-----------------
+
+   ActiveMQAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.jms.ConnectionFactory' (OnClassCondition)
+
+   AopAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.aspectj.lang.annotation.Aspect' (OnClassCondition)
+
+   ArtemisAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.jms.ConnectionFactory' (OnClassCondition)
+```
+
+
 
 
 
