@@ -19,6 +19,10 @@ tags:
 
 
 
+[SpringBoot官方文档](https://docs.spring.io/spring-boot/docs/2.0.0.RELEASE/reference/htmlsingle/#boot-documentation)
+
+
+
 ## No.1: @Value获取值和@ConfigurationProperties获取值比较
 
 |                      | @ConfigurationProperties | @Value     |
