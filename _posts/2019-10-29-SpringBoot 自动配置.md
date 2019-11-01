@@ -377,7 +377,7 @@ xxxxProperties:封装配置文件中相关属性；
 ```properties
 # application.properties文件
 
-# 开启SpringBoot的Debug模式
+# 开启SpringBoot的Debug模式  
 debug=true
 ```
 
