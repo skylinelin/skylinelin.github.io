@@ -227,22 +227,56 @@ tags:
     matchIfMissing = true
 )
 public class HttpEncodingAutoConfiguration {
+    //他已经和SpringBoot的配置文件映射了
     private final Encoding properties;
 
+    //只有一个有参构造器的情况下，参数的值就会从容器中拿
     public HttpEncodingAutoConfiguration(HttpProperties properties) {
         this.properties = properties.getEncoding();
     }
 
+    //给容器中添加一个组件，这个组件的某些值需要从properties中获取
     @Bean
+    //判断容器没有这个组件？
     @ConditionalOnMissingBean
     public CharacterEncodingFilter characterEncodingFilter() {
-        //代码省略
+        CharacterEncodingFilter filter = new OrderedCharacterEncodingFilter();
+        filter.setEncoding(this.properties.getCharset().name());
+        filter.setForceRequestEncoding(this.properties.shouldForce(org.springframework.boot.autoconfigure.http.HttpProperties.Encoding.Type.REQUEST));
+        filter.setForceResponseEncoding(this.properties.shouldForce(org.springframework.boot.autoconfigure.http.HttpProperties.Encoding.Type.RESPONSE));
+        return filter;
     }
-    //代码省略
+
+    @Bean
+    public HttpEncodingAutoConfiguration.LocaleCharsetMappingsCustomizer localeCharsetMappingsCustomizer() {
+        return new HttpEncodingAutoConfiguration.LocaleCharsetMappingsCustomizer(this.properties);
+    }
+
+    private static class LocaleCharsetMappingsCustomizer implements WebServerFactoryCustomizer<ConfigurableServletWebServerFactory>, Ordered {
+        private final Encoding properties;
+
+        LocaleCharsetMappingsCustomizer(Encoding properties) {
+            this.properties = properties;
+        }
+
+        public void customize(ConfigurableServletWebServerFactory factory) {
+            if (this.properties.getMapping() != null) {
+                factory.setLocaleCharsetMappings(this.properties.getMapping());
+            }
+
+        }
+
+        public int getOrder() {
+            return 0;
+        }
+    }
 }
+
 ```
 
+根据当前不同的条件判断，决定这个配置类是否生效？
 
+一但这个配置类生效；这个配置类就会给容器中添加各种组件；这些组件的属性是从对应的properties类中获取的，这些类里面的每一个属性又是和配置文件绑定的；
 
 #### HttpProperties类
 
