@@ -1,8 +1,8 @@
 ---
 layout:     post
-title:      SpringBoot point
+title:      SpringBoot 自动配置
 subtitle:   核心、自动配置、significance
-date:       2019-10-29
+date:       2019-11-01
 author:     skylinelin
 header-img: resource_img/spring/SpringBoot/head3.jpg
 catalog: true
@@ -19,3 +19,10 @@ tags:
 
 
 
+
+
+
+
+
+
+> 结尾
