@@ -145,3 +145,18 @@ public class UserGetController {
 }
 ```
 
+---
+
+
+
+## 高可用的Eureka Server
+
+Eureka Server即服务的注册中心，在上面的案例中，我们只有一个EurekaServer，事实上EurekaServer也可以是一个集群，形成高可用的Eureka中心。
+
+> 服务同步
+
+多个Eureka Server之间也会互相注册为服务，当服务提供者注册到Eureka Server集群中的某个节点时，该节点会把服务的信息同步给集群中的每个节点，从而实现数据同步。因此，无论客户端访问到Eureka Server集群中的任意一个节点，都可以获取到完整的服务列表信息。
+
+而作为客户端，需要把信息注册到每个Eureka中：
+
+![](/resource_img/spring/SpringCloud/Eurekaha.png)
