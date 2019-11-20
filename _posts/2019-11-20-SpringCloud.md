@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Spring Cloud
-subtitle:   动态、获取、改变
+subtitle:   分布式、微服、负载均衡
 date:       2019-11-20
 author:     skylinelin
 header-img: resource_img/spring/SpringCloud/head.jpg
